@@ -1,14 +1,16 @@
-<div>
+<div class="mx-auto" style="width: 200px;">
 <h1>My Lists</h1>
 </div>
 
-<div>
+<div class="d-flex p-4">
+  <div class="mx-auto" style="width: 200px;">
 <% @list.each do |list| %>
- <p> <%= link_to list.name, list_path(list), class: "btn btn-success" %> </p>
+ <p> <%= link_to list.name, list_path(list)%> </p>
 <% end %>
 </div>
+  </div>
 
 <br>
-<div>
+<div class="mx-auto" style="width: 200px;">
 <%= link_to "create a new movie list", new_list_path, class: "btn btn-primary" %>
 </div>
